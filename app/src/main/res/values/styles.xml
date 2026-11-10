@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.UniversalProductScanner" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#145DA0</item>
+        <item name="colorPrimaryVariant">#0B3C5D</item>
+        <item name="colorSecondary">#2E8BC0</item>
+    </style>
+</resources>
