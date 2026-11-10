@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="#F4F7FB">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Universal Product Scanner" android:textColor="#123047"
+            android:textSize="23sp" android:textStyle="bold" android:paddingBottom="6dp" />
+        <TextView android:id="@+id/statusText" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Barcode scan করুন অথবা নম্বর লিখুন"
+            android:textColor="#526777" android:paddingBottom="12dp" />
+        <androidx.camera.view.PreviewView android:id="@+id/previewView"
+            android:layout_width="match_parent" android:layout_height="230dp" />
+        <Button android:id="@+id/scanButton" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="ক্যামেরা দিয়ে Scan করুন" />
+        <EditText android:id="@+id/barcodeInput" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Barcode number"
+            android:inputType="text" android:singleLine="true" />
+        <Button android:id="@+id/searchButton" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="পণ্য খুঁজুন" />
+        <EditText android:id="@+id/nameInput" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Product name"
+            android:inputType="textCapSentences" />
+        <EditText android:id="@+id/priceInput" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="দাম (IQD)"
+            android:inputType="numberDecimal" />
+        <Button android:id="@+id/saveButton" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="নিজের Database-এ Save করুন" />
+        <TextView android:id="@+id/resultText" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="পণ্যের তথ্য এখানে দেখা যাবে"
+            android:textColor="#123047" android:textSize="16sp"
+            android:paddingTop="14dp" android:paddingBottom="20dp" />
+    </LinearLayout>
+</ScrollView>
